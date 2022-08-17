@@ -21,56 +21,48 @@ public class OrderPageOne {
 
     //ввести значение в поле Имя
     public OrderPageOne printUserName(String userName) {
-
         driver.findElement(userNameInput).sendKeys(userName);
         return this;
     }
 
     //ввести значение в поле Фамилия
     public OrderPageOne printUserSurname(String userSurname) {
-
         driver.findElement(userSurnameInput).sendKeys(userSurname);
         return this;
     }
 
     //ввести значение в поле Адрес
     public OrderPageOne printUserAddress(String userAddress) {
-
         driver.findElement(userAddressInput).sendKeys(userAddress);
         return this;
     }
 
     //кликнуть по полю Станция метро
     public OrderPageOne clickMetro() {
-
         driver.findElement(metroDropdown).click();
         return this;
     }
 
     //выбрать станцию метро из списка для первого теста
     public OrderPageOne clickMetroStationOne() {
-
         driver.findElement(metroStationForTestOneDropdown).click();
         return this;
     }
 
     //выбрать станцию метро из списка для второго теста
     public OrderPageOne clickMetroStationTwo() {
-
         driver.findElement(metroStationForTestTwoDropdown).click();
         return this;
     }
 
     //ввести значение в поле Телефон
     public OrderPageOne printPhoneNumber(String phoneNumber) {
-
         driver.findElement(userPhoneInput).sendKeys(phoneNumber);
         return this;
     }
 
     //клик по кнопке Далее
     public OrderPageTwo clickNextButton() {
-
         driver.findElement(nextButton).click();
         return new OrderPageTwo(driver);
     }

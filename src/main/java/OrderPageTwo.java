@@ -22,7 +22,6 @@ public class OrderPageTwo {
 
     //ввести значение в поле Даты доставки самоката
     public OrderPageTwo printDeliveryDate(String date) {
-
         driver.findElement(deliveryDateInput).sendKeys(date);
         return this;
     }
@@ -35,35 +34,30 @@ public class OrderPageTwo {
 
     //Клик по количеству дней адренды из списка
     public OrderPageTwo clickAmountOfDays() {
-
         driver.findElement(amountOfDaysDropdown).click();
         return this;
     }
 
     //Выбрать цвет самоката для первого теста
     public OrderPageTwo clickScooterColorOne() {
-
         driver.findElement(scooterColorForTestOneCheckbox).click();
         return this;
     }
 
     //Выбрать цвет самоката для второго теста
     public OrderPageTwo clickScooterColorTwo() {
-
         driver.findElement(scooterColorForTestTwoCheckbox).click();
         return this;
     }
 
     //ввести комментарий для курьера
     public OrderPageTwo printComment(String comment) {
-
         driver.findElement(commentInput).sendKeys(comment);
         return this;
     }
 
     //клик по нижней кнопке Заказать
     public OrderPageTwo clickOrderButtonDown() {
-
         driver.findElement(orderButtonDown).click();
         return this;
     }
@@ -76,7 +70,6 @@ public class OrderPageTwo {
 
     //отображение модалки успешного заказа
     public boolean getModalSuccessfulOrder() {
-
         return driver.findElement(successfulOrderModal).isDisplayed();
     }
 }
